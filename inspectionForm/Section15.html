@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workspace Inspection Portal</title>
+	<link type="text/css" rel="stylesheet" href="../style.css">
+	<meta charset = "utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+
+<div id ="main">
+	<div id ="left-container">
+		<div id = "header">
+			<div id="logo">
+
+			</div>
+			<hr>
+			<div id="navigationBar">
+				<ul>
+					<li><a href="index.html"><img src="../images/dashboard_icon.png" height="25"></a></li>
+					<li><a href="inspection.html" class="active"><img src="../images/inspection_icon.png"  height="25"></a></li>
+					<li><a href="report.html"><img src="../images/report_icon.png" height="25"></a></li>
+					<li><a href="cap.html"><img src="../images/cap_icon.png" 	height="25"></a></li>
+					<li><a href="contact.html"><img src="../images/contact_icon.png" height="25"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id ="right-container">
+		<div id="right-top-container">
+			<div class="top-right">Welcome,&nbsp;
+				<span id="welcomeName" class="bolding"></span>
+				<img src = "images/icon.jpeg" width="30px" height="30px">
+			</div>
+
+			<div class="bot-left">
+				<a href="inspection.html"><img src="images/inspection.png"></a>
+			</div>
+		</div>
+		<div id="right-bot-container">
+			<span class="heading1">Creating Inspection</span>
+
+			<ul>
+			<li>
+			<form target="_self" action="inspection_generated.html">
+  				<h3>15. Biological hazards (general)</h3>
+  					If your laboratory requires physical containment e.g. PC2, are permits and certifications current?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Has the need for vaccinations been assessed?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					If vaccinations are required, are they provided prior to the commencement of activities?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Are staff aware of access issues for non-laboratory staff?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Is there a current IBC or OGTR number for Genetic Manipulation work?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Are Biological Safety Cabinets tested annually?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Have staff been trained in transport requirements for infectious, diagnostic or genetically modified material?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Is there an autoclave register of maintenance and faults?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Are AQIS permits current?
+					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+
+  					<input type="button" value="Next Page" onclick="javascrtpt:window.location.href='Section16.html'">
+ 					<input type="button" value="Prev Page" onclick="javascrtpt:window.location.href='Section14.html'">
+			</form>
+			</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

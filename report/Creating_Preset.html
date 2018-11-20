@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workspace Inspection Portal</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<meta charset = "utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+
+<div id ="main">
+	<div id ="left-container">
+		<div id = "header">
+			<div id="logo">
+
+			</div>
+			<hr>
+			<div id="navigationBar">
+				<ul>
+					<li><a href="index.html"><img src="images/dashboard_icon.png" height="25"></a></li>
+					<li><a href="InspectionManager.html"><img src="images/inspection_icon.png"  height="25"></a></li>
+					<li><a href="report.html" class="active"><img src="images/report_icon.png" height="25"></a></li>
+					<li><a href="cap.html"><img src="images/cap_icon.png" 	height="25"></a></li>
+					<li><a href="contact.html"><img src="images/contact_icon.png" height="25"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id ="right-container">
+		<div id="right-top-container">
+			<div class="top-right">Welcome,&nbsp;
+				<span id="welcomeName" class="bolding"></span>
+				<img src = "images/icon.jpeg" width="30px" height="30px">
+			</div>
+
+			<div class="bot-left">
+				<a href="report.html"><img src="images/report.png"></a>
+			</div>
+		</div>
+		<div id="right-bot-container">
+			<span class="heading1">Preset Report</span>
+
+			<ul>
+			<li>
+			<form target="_self" action="report_generated.html">
+
+
+				 <h3>Audit Title: UQ OHS Workplace Assessment Inspection Checklist (v2.1, 3 July 2012)</h3>
+				 <select name="selectionField">
+					<option value="SHRS INSPECTION 2016" >SHRS INSPECTION 2016 </option>
+  					<option value="SHRS INSPECTION 2016" >SHRS INSPECTION 2016 </option>
+  					<option value="SHRS INSPECTION 2016" >SHRS INSPECTION 2016 </option>
+					<option value="SHRS INSPECTION 2016" >SHRS INSPECTION 2016 </option>
+					</select>
+
+
+				 <h3>Campus / Location / Site:</h3>
+				<select name="selectionField">
+				 <option value="SHRS Building (84)" >SHRS Building (84) </option>
+				 <option value="SHRS Building (84)" >SHRS Building (84) </option>
+				 <option value="SHRS Building (84)" >SHRS Building (84) </option>
+				 <option value="SHRS Building (84)" >SHRS Building (84) </option>
+				 </select>
+
+
+				 <h3>Organisational Unit / Workplace:</h3>
+				 <select name="selectionField">
+				 <option value="SHRS" >SHRS </option>
+				 <option value="SHRS" >SHRS </option>
+				 <option value="SHRS" >SHRS </option>
+				 <option value="SHRS" >SHRS </option>
+				</select>
+
+				 <h3>Area / Facility Manager:</h3>
+				 First name:
+					<input type="text" name="firstname" value="Deon"><br>
+				 Last name:
+  					<input type="text" name="lastname" value="Scott"><br><br>
+
+  					<input type="radio" name="gender" value="male" checked> Male<br>
+  					<input type="radio" name="gender" value="Female"> Female<br><br>
+
+				 <h3>Date of Inspected: <input type="text" name="date" value="29-3-2016"><br>
+				 <br>
+
+				 <h3>Conducted by</h3>
+
+ 				 First name:
+					<input type="text" name="firstname" value="Leanne"><br>
+				 Last name:
+  					<input type="text" name="lastname" value="Ritchie"><br><br>
+  					<input type="radio" name="gender2" value="male" > Male<br>
+  					<input type="radio" name="gender2" value="Female" checked> Female<br><br>
+
+
+ 				 Contact number:
+ 				 	<input type="text" name="Phone" value="0420394385"><br><br>
+ 				<h3>Completed on <input type="text" name="date" value="13-7-2016"><br>
+
+
+					<br>
+					<br>
+					<br>
+					<hr>
+				 <h2>Select Categories</h2>
+				 		<input type="checkbox" name="category" value="Over Score" checked>Score<br>
+				 		<input type="checkbox" name="category" value="Management" checked>1. Management<br>
+				 		<input type="checkbox" name="category" value="Training" checked>2. Training<br>
+				 		<input type="checkbox" name="category" value="Work Environment" checked>3. Work Environment<br>
+				 		<input type="checkbox" name="category" value="Ergonomics" checked>4. Ergonomics<br>
+
+						<input type="checkbox" name="category" value="Amenities" checked>5. Amenities<br>
+						<input type="checkbox" name="category" value="Personal protective equipment (PPE)" checked>6. Personal protective equipment (PPE)<br>
+						<input type="checkbox" name="category" value="Housekeeping & waste management" checked>7. Housekeeping & waste management<br>
+						<input type="checkbox" name="category" value="Floors & aisles" checked>8. Floors & aisles<br>
+						<input type="checkbox" name="category" value="Special work procedures" checked>9. Special work procedures<br>
+						<input type="checkbox" name="category" value="Mechanical & heat hazards" checked>10. Mechanical & heat hazards<br>
+						<input type="checkbox" name="category" value="Electrical equipment" checked>11. Electrical equipment<br>
+						<input type="checkbox" name="category" value="Chemicals (general)" checked>12. Chemicals (general)<br>
+						<input type="checkbox" name="category" value="Flammable liquids" checked>13. Flammable liquids<br>
+						<input type="checkbox" name="category" value="Compressed & fuel gases" checked>14. Compressed & fuel gases<br>
+						<input type="checkbox" name="category" value="Biological hazards (general)" checked>15. Biological hazards (general)<br>
+						<input type="checkbox" name="category" value="Emergency equipment" checked>16. Emergency equipment<br>
+						<input type="checkbox" name="category" value="Egress & evacuation" checked>17. Egress &amp; evacuation<br>
+						<input type="checkbox" name="category" value="Fire protection" checked>18. Fire protection<br>
+
+  					<br>
+  					<input type="submit" value="Generate">
+
+			</form>
+			</li>
+			</ul>
+
+
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

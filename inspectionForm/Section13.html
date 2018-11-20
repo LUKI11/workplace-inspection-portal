@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workspace Inspection Portal</title>
+	<link type="text/css" rel="stylesheet" href="../style.css">
+	<meta charset = "utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+
+<div id ="main">
+	<div id ="left-container">
+		<div id = "header">
+			<div id="logo">
+
+			</div>
+			<hr>
+			<div id="navigationBar">
+				<ul>
+					<li><a href="index.html"><img src="../images/dashboard_icon.png" height="25"></a></li>
+					<li><a href="inspection.html" class="active"><img src="../images/inspection_icon.png"  height="25"></a></li>
+					<li><a href="report.html"><img src="../images/report_icon.png" height="25"></a></li>
+					<li><a href="cap.html"><img src="../images/cap_icon.png" 	height="25"></a></li>
+					<li><a href="contact.html"><img src="../images/contact_icon.png" height="25"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id ="right-container">
+		<div id="right-top-container">
+			<div class="top-right">Welcome,&nbsp;
+				<span id="welcomeName" class="bolding"></span>
+				<img src = "images/icon.jpeg" width="30px" height="30px">
+			</div>
+
+			<div class="bot-left">
+				<a href="inspection.html"><img src="images/inspection.png"></a>
+			</div>
+		</div>
+		<div id="right-bot-container">
+			<span class="heading1">Creating Inspection</span>
+
+			<ul>
+			<li>
+			<form target="_self" action="inspection_generated.html">
+  				<h3>13. Flammable liquids</h3>
+  					Are quantities of flammable liquids kept to within the storage limit?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Are flammable liquids cabinets provided? Are they correctly used?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+  					Is flammable liquid use & storage well away from heat & ignition sources?
+  					<select name="selectionField">
+					<option value="x" >-- </option>
+					<option value="Conformance" >Conformance </option>
+					<option value="Partial Conform" >Partial Conform</option>
+					<option value="Not verified" >Not verified</option><option value="Not Applicable" >Not Applicable</option><option value="Yes" >Yes</option><option value="No" >No</option>
+
+					</select>
+					<br><textarea cols="60" rows="1" name="comment" placeholder="Additional comment/action"></textarea>
+					<br>
+
+  					<input type="button" value="Next Page" onclick="javascrtpt:window.location.href='Section14.html'">
+ 					<input type="button" value="Prev Page" onclick="javascrtpt:window.location.href='Section12.html'">
+			</form>
+			</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

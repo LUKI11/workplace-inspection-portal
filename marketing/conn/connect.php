@@ -1,0 +1,15 @@
+<?php
+    // Create connection
+    $servername = "localhost";
+    $username = "operation";
+    $password = "operation";
+    $dbname = "info_product_stats";    
+    // Check connection
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+?>
